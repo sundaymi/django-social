@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> {% endcomment %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    {% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> {% endcomment %}
+    <link rel="stylesheet" href="static/style.css" type="text/css">
     <title>Dwitter</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  {% comment %} <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <a class="navbar-brand" href="#" style="color: white;">Dwitter</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,22 @@
         <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
-  </nav>
+  </nav> {% endcomment %}
+
+<header>
+  <div class="container">
+    <img src="assets/logo.png" alt="logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#">login</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">communication</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
       <a href="{% url 'dwitter:dashboard' %}"></a>
       <section> 
           <h1>Dwitter</h1>
